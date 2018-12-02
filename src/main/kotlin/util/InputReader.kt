@@ -5,10 +5,14 @@ import java.io.File
 object InputReader {
 
     fun getInputAsString(day: Int): String {
-        return File("src/main/resources/input_day_$day.txt").readText()
+        return fromResources(day).readText()
     }
 
     fun getInputAsList(day: Int): List<String> {
-        return File("src/main/resources/input_day_$day.txt").readLines()
+        return fromResources(day).readLines()
+    }
+
+    private fun fromResources(day: Int): File {
+        return File(javaClass.classLoader.getResource("input_day_$day.txt").toURI())
     }
 }

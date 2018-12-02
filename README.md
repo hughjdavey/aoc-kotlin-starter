@@ -1,6 +1,6 @@
 # aoc-kotlin-starter
 
-Starter template for solving [Advent of Code](https://adventofcode.com) in [Kotlin](https://kotlinlang.org/).
+Starter template for solving [Advent of Code](https://adventofcode.com) in [Kotlin](https://kotlinlang.org/)
 
 ### Features
 
