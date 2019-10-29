@@ -4,9 +4,11 @@ Starter template for solving [Advent of Code](https://adventofcode.com) in [Kotl
 
 ### Features
 
-*  Starter .gitignore
-* Junit and Hamcrest test libraries included (see **Testing** below)
 * Gradle setup so you can run a specific day or all days on the command line (see **Running** below)
+* Timings for each part of each day
+* Input for each day automatically exposed in String and List form
+* Junit and Hamcrest test libraries included (see **Testing** below)
+* Starter .gitignore
 
 ### Running
 
@@ -27,7 +29,7 @@ Project includes Junit and Hamcrest and a stub unit test to get you going. To ru
 ### Architecture
 
 * Inputs go into `src/main/resources` and follow the naming convention `input_day_X.txt`
-* Solutions go into `src/main/kotlin/days` and extend the `Day` abstract class, callings its constructor with their day number 
+* Solutions go into `src/main/kotlin/days` and extend the `Day` abstract class, calling its constructor with their day number 
 * Solutions follow the naming convention `DayX`
 * It is assumed all solutions will have two parts but share the same input
 * Input is exposed in the solution classes in two forms - `inputList` and `inputString`
