@@ -2,11 +2,11 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     application
-    kotlin("jvm") version "1.3.60"
+    kotlin("jvm") version "1.4.10"
 }
 
 application {
-    mainClassName = "util.Runner"
+    mainClass.set("util.Runner")
 }
 
 version = "1.0-SNAPSHOT"
@@ -16,10 +16,10 @@ repositories {
 }
 
 dependencies {
-    compile(kotlin("stdlib-jdk8"))
-    compile("org.reflections", "reflections", "0.9.11")
-    testCompile("junit", "junit", "4.12")
-    testCompile("org.hamcrest", "hamcrest-library", "2.2")
+    implementation(kotlin("stdlib-jdk8"))
+    implementation("org.reflections", "reflections", "0.9.12")
+    testImplementation("junit", "junit", "4.13.1")
+    testImplementation("org.hamcrest", "hamcrest", "2.2")
 }
 
 tasks.withType<KotlinCompile> {

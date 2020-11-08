@@ -34,7 +34,7 @@ object Runner {
         else {
             val allDayClasses = getAllDayClasses()
             if (allDayClasses != null) {
-                allDayClasses.forEach { printDay(it) }
+                allDayClasses.sortedBy { dayNumber(it.simpleName) }.forEach { printDay(it) }
             }
             else {
                 printError("Couldn't find day classes - make sure you're in the right directory and try building again")
@@ -56,13 +56,13 @@ object Runner {
     }
 
     private fun printParts(partOne: TimedValue<Any>, partTwo: TimedValue<Any>) {
-        val padding = max(partOne.value.toString().length, partTwo.value.toString().length) + 14        // 14 is 8 (length of 'Part 1: ' + 6 more)
+        val padding = max(partOne.value.toString().length, partTwo.value.toString().length) + 14        // 14 is 8 (length of 'Part 1: ') + 6 more
         println("Part 1: ${partOne.value}".padEnd(padding, ' ') + "(${partOne.duration})")
         println("Part 2: ${partTwo.value}".padEnd(padding, ' ') + "(${partTwo.duration})")
     }
 
     private fun printError(message: String) {
-        System.err.println("ERROR\n$message")
+        System.err.println("\n=== ERROR ===\n$message")
     }
 
     private fun dayNumber(dayClassName: String) = dayClassName.replace("Day", "").toInt()
