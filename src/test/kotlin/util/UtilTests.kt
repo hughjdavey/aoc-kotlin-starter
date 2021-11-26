@@ -3,7 +3,7 @@ package util
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.collection.IsIterableContainingInOrder.contains
 import org.hamcrest.core.Is.`is`
-import org.junit.Test
+import org.junit.jupiter.api.Test
 
 class UtilTests {
 
