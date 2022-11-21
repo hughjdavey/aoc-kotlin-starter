@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     application
-    kotlin("jvm") version "1.6.0"
+    kotlin("jvm") version "1.7.20"
 }
 
 application {
@@ -17,9 +17,9 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    implementation("org.reflections", "reflections", "0.9.12")
-    testImplementation("org.junit.jupiter", "junit-jupiter-api", "5.8.1")
-    testImplementation("org.junit.jupiter", "junit-jupiter-engine", "5.8.1")
+    implementation("org.reflections", "reflections", "0.10.2")
+    testImplementation("org.junit.jupiter", "junit-jupiter-api", "5.9.1")
+    testImplementation("org.junit.jupiter", "junit-jupiter-engine", "5.9.1")
     testImplementation("org.hamcrest", "hamcrest", "2.2")
 }
 
