@@ -1,5 +1,7 @@
 # aoc-kotlin-starter
 
+:sparkles: [Screenshots](#screenshots) :sparkles:
+
 Starter template for solving [Advent of Code](https://adventofcode.com) in [Kotlin](https://kotlinlang.org/)
 
 ### Features
@@ -45,3 +47,15 @@ and how you can use the `inputList` and `inputString` mentioned above
 * To get started simply replace `src/main/input_day_1.txt` with the real input and the solutions in `Day1` with your own
 * A Day 1 test class also exists, mostly to show a few hamcrest matchers, and how test input files can differ from actual ones (see **Test input** section above).
 To get started with testing you can edit this class, and the input file at `src/test/resources/input_day_1.txt`
+
+### Screenshots
+
+Screenshots show fake data (not a real advent of code year!)
+
+##### Running all days
+
+![Running all days](/../screenshots/assets/run-all.png)
+
+##### Running a single day
+
+![Running a single day](/../screenshots/assets/run-one.png)
